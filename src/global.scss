@@ -1,0 +1,139 @@
+.textColor {
+    color: #484868;
+}
+
+.bgColor {
+    background: #484868;;
+}
+
+.txtwhite {
+    color: white;
+}
+
+.adminLinks {
+    background-color: rgb(235, 235, 235)!important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.order-list li {
+    list-style-type: decimal;
+    margin: 10px;
+    font-size: 2em;
+    font-weight: 600;
+    @media (max-width: 800px) {
+        font-size: 1.2em;
+        
+    }
+     
+}
+
+
+.adminLinksActive {
+    background-color: #7B6657!important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white!important;
+}
+
+.inputStyle {
+    padding: .3rem!important;
+    margin: .5rem!important;
+    font-size: 25px;
+    background-color: #D9D9D9;
+    border-radius: 0.375rem;
+    width: 100%;
+    display: block;
+}
+
+.hideAdminNav {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+
+    .open-nav {
+        right: 20px!important;
+    }
+
+    .show-nav {
+      background-color: #484868;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 60px;
+      width: 150px!important;
+      height: 100vh;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 500;
+      transition: all ease 1s;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .show-nav-active {
+        width: 110px;
+        transition: all ease 1s;
+    }
+
+    .show-nav a , .show-nav button {
+        font-size: 16px!important;
+        font-weight: 900!important;
+        color: #ffffff!important;
+    }
+
+    .show-close-nav {
+      display: block!important;
+      z-index: 510;
+    }
+
+    .show-open-nav {
+      display: none!important;
+      z-index: 510;
+    //   right: 20px!important;
+    }
+}
+
+.welcomeBox {
+    background-color: rgba(42, 40, 57, 0.65);
+}
+
+@media (max-width: 500px) {
+    
+    // .homesection {
+        // background: url('./assets/imgs/firstsectionimg.jpg') no-repeat;
+        // background-size: contain;
+        // transform: scale(2.2);   
+        // height: 65%!important;
+    // }
+
+    .welcomeBox {
+        background-color: rgba(0, 0, 0, 0.35);
+        width: 100%;
+    }
+    
+}
+
+
+// .quastionsSection details summary::marker {
+//     display: none!important;
+// }
+
+.quastionsSection details summary::before {
+    content: '';
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    z-index: 50;
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 600px) {
+    .quastionsSection details summary::before {
+        top: 5px;
+    }
+}
